@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "animal-weaponry",
+	"version": "${version}",
+	"name": "Animal Weaponry",
+	"description": "Its fairly self-explanatory",
+	"authors": [
+		"Fileim"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/animal-weaponry/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fileim.animalweaponry.AnimalWeaponry"
+		],
+		"client": [
+			"net.fileim.animalweaponry.AnimalWeaponryClient"
+		],
+		"fabric-datagen": [
+			"net.fileim.animalweaponry.AnimalWeaponryDataGenerator"
+		]
+	},
+	"mixins": [
+		"animal-weaponry.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
